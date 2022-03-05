@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Nav style start */
+nav {
+  position: fixed;
+  top: 30%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+nav a {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+nav span {
+  width: 0;
+  display: block;
+  overflow: hidden;
+  transition: all 300ms;
 }
 
-.App-link {
-  color: #61dafb;
+nav i {
+  padding: 13px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: rgb(2, 51, 35);
+  transition: all 500ms;
+}
+nav a:hover {
+  color: whitesmoke;
+  background-color: blue;
+}
+nav i:hover + .link_text {
+  width: max-content;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 780px) {
+  nav {
+    position: static;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  nav i:hover + .link_text {
+    width: 0;
+    padding: 0;
   }
+}
+
+/* Nav style End */
+
+main {
+  background-color: ghostwhite;
+}
+
+/* Banner style start */
+.banner_block {
+  height: 100vh;
+}
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.banner_info {
+  height: 100%;
+}
+/* Banner style end */
+
+/* About Style start */
+.about_profile_Pic {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  padding: 15px;
+  margin: auto;
+  display: block;
+}
+.social_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.social_link a {
+  width: 25px;
+  height: 25px;
+  font-size: 27px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.social_link img {
+  width: 100%;
+  height: 100%;
+}
+/* About Style end */
+/* Resume  Style start */
+.side_stick {
+  border-left: 2px solid blue;
+  padding: 0 0 1px 10px;
+  position: relative;
+}
+.side_stick::before {
+  content: 'o';
+  position: absolute;
+  top: -32px;
+  left: -9px;
+  font-size: 29px;
+  color: blue;
+}
+
+.progress-bar {
+  padding: 5px !important;
+  background: linear-gradient(90deg, blue, red);
+}
+/*  Resume Style end */
+
+/*  Service Style start */
+.service_card:hover {
+  background: linear-gradient(180deg, rgb(193, 60, 255), rgb(41, 181, 247));
+  color: aliceblue;
+}
+/*  Service Style end */
+
+.portfolio_card:hover {
+  background-color: rgb(56, 35, 35);
+  color: aliceblue;
 }
