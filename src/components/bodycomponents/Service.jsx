@@ -1,55 +1,50 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 export default function Service() {
   const services = [
     {
-      title: 'Html/Css Page',
-      decs: 'I can design a gorgeous eye-catching look web page with modern animation.',
+      title: 'React/Vue/Staic web page or component',
+      decs: 'You will get a fast & lightweight web page or component.',
     },
     {
-      title: 'NodeJS Backend server',
-      decs: 'Any web application? I can build it with ultra security using express & mongodb.',
+      title: 'Laravel Web Application',
+      decs: 'You will get a fast & professional full web application using Laravel.',
     },
     {
-      title: 'React/Vue Frontend',
-      decs: 'Build React/Redux and Vue/Vuex webpage or web application according to your requirement.',
+      title: 'Next.JS web Aplication',
+      decs: 'You will get a singel page,fast & SEO friendly web application using Next.JS.',
     },
     {
-      title: 'Full MERN Stack Application',
-      decs: 'Make A Full MERN Stack Web application for you, with super optimized way.',
+      title: 'MERN statck web Application',
+      decs: 'You will get a lightweight & mordern full MERN web application.',
     },
     {
-      title: 'Next.js Application',
-      decs: 'Do you need Next.js web Application? Or need to fix it? I am here.',
+      title: 'Express.JS Backend rest api',
+      decs: 'You will get a super fast, custom and secure rest api.',
     },
     {
-      title: '24H Support',
-      decs: 'I am giving 24h support for your problem.',
+      title: 'Fixing Bug of Web Application',
+      decs: 'You will get a great solution for your web applicaion bug.',
     },
   ];
   return (
-    <Container id="service">
-      <h4 className="text-center p-3">
-        <span className="border-bottom text-uppercase">Services</span>
-      </h4>
-      <div className="d-flex flex-wrap justify-content-center">
+      <>
         {services.map((s, key) => (
           <Card
             key={key}
-            style={{ width: '18rem' }}
             className="m-1 text-center service_card"
           >
             <Card.Body>
               <Card.Title>
                 <i class="fas fa-tools"></i>
               </Card.Title>
-              <Card.Title>{s.title}</Card.Title>
-              <Card.Text>{s.decs}</Card.Text>
+              
+              <Card.Body>{s.decs}</Card.Body>
+              <Card.Footer>{s.title}</Card.Footer>
             </Card.Body>
           </Card>
         ))}
-      </div>
-    </Container>
+      </>
   );
 }

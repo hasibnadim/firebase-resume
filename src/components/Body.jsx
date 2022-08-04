@@ -4,7 +4,6 @@ import Banner from './bodycomponents/Banner';
 import Contact from './bodycomponents/Contact';
 import Portfolio from './bodycomponents/Portfolio';
 import Resume from './bodycomponents/Resume';
-import Service from './bodycomponents/Service';
 
 export default function Body() {
   return (
@@ -12,7 +11,6 @@ export default function Body() {
       <Banner />
       <About />
       <Resume />
-      <Service />
       <Portfolio />
       <Contact />
     </main>

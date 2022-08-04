@@ -9,7 +9,7 @@ export default function Contact() {
       </h4>
       <div className="p-2 m-2 fs-4">
         <i className="fas fa-at mx-3"></i>
-        <a href="mailto:hasibnadim@gmail.com">hasibnadim@gmail.com</a>
+        <a href="mailto:hasibnadim@gmail.com">hasibnadim0@gmail.com</a>
       </div>
       <div className="p-2 m-2 fs-4">
         <i className="fas fa-phone mx-3"></i>

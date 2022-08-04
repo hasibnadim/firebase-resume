@@ -1,59 +1,52 @@
-import React from 'react';
-import { Col, Container, ProgressBar, Row } from 'react-bootstrap';
+import React from "react";
+import { Col, Container, ProgressBar, Row } from "react-bootstrap";
 
 export default function Resume() {
   const skillsObj = [
     {
-      skillName: 'HTML',
-      parsent: 100,
-    },
-    {
-      skillName: 'CSS/CSS3',
-      parsent: 100,
-    },
-    {
-      skillName: 'Bootstrap & Tailwind',
-      parsent: 98,
-    },
-    {
-      skillName: 'JavaScript/NodeJs',
+      skillName: "HTML/HTML5/CSS/CSS3/SCSS",
       parsent: 99,
     },
     {
-      skillName: 'React & Vue',
+      skillName: "Bootstrap & Tailwind",
+      parsent: 98,
+    },
+    {
+      skillName: "JavaScript / Typescript",
+      parsent: 98,
+    },
+    {
+      skillName: "React & Vue",
       parsent: 95,
     },
-
     {
-      skillName: 'NextJS',
+      skillName: "PHP / Laravel",
+      parsent: 95,
+    },
+    {
+      skillName: "NodeJs / ExpressJS",
+      parsent: 90,
+    },
+    {
+      skillName: "MySql & MongoDB",
+      parsent: 90,
+    },
+    {
+      skillName: "NextJS",
       parsent: 85,
     },
     {
-      skillName: 'ExpressJS',
-      parsent: 98,
-    },
-
-    {
-      skillName: 'MongoDB',
-      parsent: 90,
-    },
-    {
-      skillName: 'MySql',
-      parsent: 90,
-    },
-
-    {
-      skillName: 'WordPress/CMS',
+      skillName: "WordPress/CMS",
       parsent: 80,
     },
     {
-      skillName: 'PHP / Laravel',
-      parsent: 80,
+      skillName: "C/C++, Python, Java",
+      parsent: 60,
     },
   ];
   return (
     <Container id="resume">
-      <h4 className="text-center p-3">
+      <h4 className="text-center pt-3">
         <span className="border-bottom text-uppercase">Resume</span>
       </h4>
       <Row>
